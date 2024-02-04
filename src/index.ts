@@ -3,6 +3,8 @@ import axios from "axios";
 import msal from "@azure/msal-node";
 import { readFileSync } from "fs";
 
+// https://learn.microsoft.com/en-us/entra/identity-platform/tutorial-v2-nodejs-webapp-msal
+
 const config = JSON.parse(readFileSync("config.json", "utf-8"));
 const clientConfiguration = JSON.parse(readFileSync("scenarioConfig.json", "utf-8"));
 

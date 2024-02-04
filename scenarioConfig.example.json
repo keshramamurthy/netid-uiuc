@@ -1,0 +1,22 @@
+{
+    "authOptions":
+        {
+            "clientId": "MS CLIENT ID HERE",
+            "authority": "https://login.microsoftonline.com/common/"
+        },
+    "request":
+    {
+        "authCodeUrlParameters": {
+            "scopes": ["user.read"],
+            "redirectUri": "YOUR REDIRECT URL"
+        },
+        "tokenRequest": {
+            "redirectUri": "YOUR REDIRECT URL",
+            "scopes": ["user.read"]
+        }
+    },
+    "resourceApi":
+    {
+        "endpoint": "https://graph.microsoft.com/v1.0/me"
+    }
+}
